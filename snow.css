@@ -1,0 +1,41 @@
+body {background-color: #141c4b;}
+.overlay {position: fixed; top:0; right: 0; bottom: 0; left: 0;}
+#landscape {background-image:url(images/snow-gba4e6ee14_1920.jpg);}
+#info {position: absolute; left:50%;}
+#info h1 {margin-bottom: -18px;}
+#info h1,h2 {color: #dce530;}
+#info p {color:#a2aef5; text-align: justify; margin-right: 20px;}
+#form {position:absolute;right:72%;
+       top: 60%; color: white;}
+#form {background-color: #141c4b;}
+button {margin-left: 320px; border-radius: 25px;
+        font-size: 20px;}
+button:hover { color:orangered}                     
+#snow .flake{width: 20px; height: 20px; top:-20%; background-color:#fffB;
+             border-radius: 100%;
+             position: absolute;
+             animation: fall 10s linear infinite; font-size: 0;
+             background-image: radial-gradient(white,rgba(0, 174, 255, 0.155));}
+#snow .flake.md {animation: fall 15s linear infinite;
+                 width: 12px; height: 12px;}
+#snow .flake.sm{animation: fall 22s linear infinite;
+                width:10px; height: 10px;}                              
+#snow .flake:nth-child(1){left: 15%;}
+#snow .flake:nth-child(2){left: 5%; animation-delay: 2s;} 
+#snow .flake:nth-child(3){left: 25%; animation-delay: 3.5s;} 
+#snow .flake:nth-child(4){left: 65%; animation-delay: 7s;} 
+#snow .flake:nth-child(5){left: 50%; animation-delay:3.5s;} 
+#snow .flake:nth-child(6){left: 95%;}
+#snow .flake.md:nth-child(7){left:20%; animation-delay:5s}
+#snow .flake.md:nth-child(8){left:40%; animation-delay:10s} 
+#snow .flake.md:nth-child(9){left:60%; animation-delay:4s} 
+#snow .flake.md:nth-child(10){left:55%; animation-delay:8s} 
+#snow .flake.md:nth-child(11){left:85%; animation-delay:3s} 
+#snow .flake.md:nth-child(12){left:20%; animation-delay:2s}
+#snow .flake.sm:nth-child(13){left:43%; animation-delay:3s;}
+#snow .flake.sm:nth-child(14){left:63%; animation-delay:5s;}
+#snow .flake.sm:nth-child(15){left:77%; animation-delay:8s;}
+#snow .flake.sm:nth-child(16){left:84%; animation-delay:4s;}
+#snow .flake.sm:nth-child(17){left:28%; animation-delay:6s;}
+#snow .flake.sm:nth-child(18){left:91%; animation-delay:6.5s;}                                          
+@keyframes fall {from{top:-20%} to{top:100%}}                    
